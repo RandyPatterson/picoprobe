@@ -17,8 +17,8 @@ debug_init_break = tbreak setup
 > ___
 > Use a different *platform* that supports the Pico Probe until it's merged with the main branch. see [this](https://arduino-pico.readthedocs.io/en/latest/platformio.html)
 
-![finished board](content\finishedproduct.jpg)
+![finished board](./content/finishedproduct.jpg)
 
-![PCB](content\3dview.png)
+![PCB](./content/3dview.png)
 
-![Schematic](content\schematic.png)
+![Schematic](./content/schematic.png)
