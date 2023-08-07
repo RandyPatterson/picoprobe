@@ -13,11 +13,12 @@ upload_protocol = picoprobe
 debug_init_break = tbreak setup
 
 ```
-Be sure to use zaDigg to replace the USB driver on picoProbe Interface 2 to libusb-win32 (Windows)
+Be sure to use zadig to replace the USB driver on **Picoprobe (Interface 2)** to **libusb-win32** (Windows)
 
-![zadigg](./content/zadigg.png)
+![zadig](./content/zadigg.png)
 
 Device Manager
+
 ![Device Manger](./content/devices.png)
 
 ### Connection Diagram 
