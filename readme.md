@@ -4,19 +4,21 @@ Using the Raspberry Pi Pico as a SWD (Software Debug) Probe.  Simple schematic a
 ## platformio.ini settings 
 ```ini
 [env:pico]
-;https://arduino-pico.readthedocs.io/en/latest/platformio.html
-platform = https://github.com/maxgerhardt/platform-raspberrypi.git
+platform = raspberrypi
 board = pico
 framework = arduino
-upload_protocol = picoprobe
 debug_tool = picoprobe
+upload_protocol = picoprobe
 ;start debugging at sketch setup() otherwise start in RTOS main
-debug_init_break = tbreak setup 
-```
-> **NOTE** 
-> ___
-> Use a different *platform* that supports the Pico Probe until it's merged with the main branch. see [this](https://arduino-pico.readthedocs.io/en/latest/platformio.html)
+debug_init_break = tbreak setup
 
+```
+Be sure to use zaDigg to replace the USB driver on picoProbe Interface 2 to libusb-win32 (Windows)
+
+![zadigg](./content/zadigg.png)
+
+Device Manager
+![Device Manger](./content/devices.png)
 
 ### Connection Diagram 
 ![fritzing diagram](./content/wiring.jpg)
